@@ -21,15 +21,15 @@ let g:indent_guides_enable_on_vim_startup = 0
 nmap <silent> <leader>cd :lcd %:h<CR>
 
 "ctl + shift + f 查找
-map <D-F> :Ack<space>
+map <D-F> :Ack --smart-case<space>
+
+"ctlrP 设置
+let g:ctrlp_by_filename = 1
+let g:ctrlp_regexp_search = 1
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|docs)$' }
 
 "编辑vimlocal
 nmap <silent> <leader>ev :e ~/.vimrc.local<CR>
-
-function! SwitchProject(key)
-endfunction
-    noremap <leader>bg :call ToggleBG()<CR>
-
-
-"ignore
 
