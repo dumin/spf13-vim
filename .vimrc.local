@@ -17,3 +17,19 @@ let NERDTreeQuitOnOpen=0
 "不要显示引导
 let g:indent_guides_enable_on_vim_startup = 0
 
+"进入当前目录，废除默认打开路径的功能
+nmap <silent> <leader>cd :lcd %:h<CR>
+
+"ctl + shift + f 查找
+map <D-F> :Ack<space>
+
+"编辑vimlocal
+nmap <silent> <leader>ev :e ~/.vimrc.local<CR>
+
+function! SwitchProject(key)
+endfunction
+    noremap <leader>bg :call ToggleBG()<CR>
+
+
+"ignore
+

@@ -1,0 +1,2 @@
+" 设置不要主动进入目录
+let g:spf13_no_autochdir = 1
