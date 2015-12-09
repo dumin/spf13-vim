@@ -1,0 +1,19 @@
+"设置主题
+colorscheme desert
+
+"解决gb编码文件乱码
+set encoding=utf-8
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+
+set guifont=Menlo:h12
+
+"不要进行拼写检查，避免中文各种波浪号
+set nospell
+
+"NERDTree设置
+let NERDTreeIgnore=['\.py[cd]$', '.DS_Store$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.meta$', '\.bin$']
+let NERDTreeQuitOnOpen=0
+
+"不要显示引导
+let g:indent_guides_enable_on_vim_startup = 0
+
